@@ -146,4 +146,48 @@ EOM
     box.text = new.insert(box.cursor_position, strs)
   end
 
+  command(
+    :aa_charlie_8,
+    name: 'AA_ウイーンバード',
+    condition: lambda{ |opt| true },
+    visible: true,
+    role: :postbox
+  ) do |opt|
+    # Thanks @Asyley_
+    strs = <<"EOM"
+　　＿＿＿＿
+　／　 ´՞　 ՞｀＼
+　|　　　し　　｜
+（　　 　ਊ　　　｝
+　＼＿＿＿＿＿／
+　　||　　　//
+　　ｍ　　 ｍ
+EOM
+    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    new = box.text
+    box.text = new.insert(box.cursor_position, strs)
+  end
+
+  command(
+    :aa_charlie_9,
+    name: 'AA_ウイーンバード(飛翔)',
+    condition: lambda{ |opt| true },
+    visible: true,
+    role: :postbox
+  ) do |opt|
+    # Thanks @Asyley_
+    strs = <<"EOM"
+|＼　　　　　＿＿＿　　　　／￣/　
+|　＼ ＿　／　´՞　՞｀＼　／　　/
+|　　　　|　　　し　　｜　 　／
+＼＿＿（　　 　ਊ　　　｝＿／
+　　　　＼＿＿＿＿＿／
+　　　　　||　　　//
+　　　　　ｍ　　 ｍ
+EOM
+    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    new = box.text
+    box.text = new.insert(box.cursor_position, strs)
+  end
+
 end
