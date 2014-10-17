@@ -9,7 +9,7 @@ Plugin.create(:mikutter_aa_charlie_uiiin) do
     role: :postbox
   ) do |opt|
     strs =  <<"EOM"
-　　　　　 ,,　＿
+.　　　　　,,　＿
 　　　／ 　　　 ｀ ､
 　　/　　(_ﾉL_）　 ヽ
  　/　　 ´՞　 ՞｀　　 l
@@ -32,7 +32,7 @@ EOM
     role: :postbox
   ) do |opt|
     strs = <<"EOM"
-　 ´՞　 ՞｀
+.　´՞　 ՞｀
 　　 し
 　　 ਊ
 EOM
@@ -91,7 +91,7 @@ EOM
     role: :postbox
   ) do |opt|
     strs = <<"EOM"
-　　ヽ￣∞￣／
+.　 ヽ￣∞￣／
 ／￣￣￣八￣￣￣ヽ
 |　／ 　　　 ｀ ､ |
 |/　　(_ﾉL_）　 ヽ|
@@ -115,7 +115,7 @@ EOM
     role: :postbox
   ) do |opt|
     strs = <<"EOM"
-　　　 　 ,.-'⌒ヽ,
+.　　　 　,.-'⌒ヽ,
 　　　 ノ  ´՞ 　՞｀ ヽ、
 　　(´　　,ノしヽ　　　 )
 　,.-'　(´　　ਊ　　｀)｀ｰ-､
@@ -135,7 +135,7 @@ EOM
     role: :postbox
   ) do |opt|
     strs = <<"EOM"
-　　　 ノ　⌒　　:.
+.　　　ノ　⌒　　:.
 　　  .　.´՞　　  .. .
 　,.-'　(´　　　   . ՞. .
 (´　　 ,ヽ、　(  し    ｀ .   .
@@ -155,7 +155,7 @@ EOM
   ) do |opt|
     # Thanks @Asyley_
     strs = <<"EOM"
-　　＿＿＿＿
+.　 ＿＿＿＿
 　／　 ´՞　 ՞｀＼
 　|　　　し　　｜
 （　　 　ਊ　　　｝
@@ -198,7 +198,7 @@ EOM
     role: :postbox
   ) do |opt|
     strs = <<"EOM"
-　　∧＿＿＿∧
+.　 ∧＿＿＿∧
 　／  ´՞人՞｀＼
 　|　　( し )　｜
 （　　/　ਊ＼　｝
