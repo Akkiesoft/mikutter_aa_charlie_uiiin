@@ -208,5 +208,30 @@ EOM
     new = box.text
     box.text = new.insert(box.cursor_position, strs)
   end
+  
+  command(
+    :aa_charlie_10,
+    name: 'AA_あしながウイーン',
+    condition: lambda{ |opt| true },
+    visible: true,
+    role: :postbox
+  ) do |opt|
+    strs = <<"EOM"
+.　 ＿＿＿＿
+　／　 ´՞　 ՞｀＼
+　|　　　し　　｜
+（　　 　ਊ　　　｝
+　＼　＿＿＿　／
+　　＼＼　／／
+　　　＼＼／
+　＿／／＼＼
+／＿／　／／
+👟　　／／
+　　👟
+EOM
+    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    new = box.text
+    box.text = new.insert(box.cursor_position, strs)
+  end
 
 end
