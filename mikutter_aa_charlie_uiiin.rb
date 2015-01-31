@@ -210,7 +210,7 @@ EOM
   end
   
   command(
-    :aa_charlie_10,
+    :aa_charlie_11,
     name: 'AA_あしながウイーン',
     condition: lambda{ |opt| true },
     visible: true,
