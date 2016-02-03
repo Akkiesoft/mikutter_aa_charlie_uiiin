@@ -208,7 +208,7 @@ EOM
     new = box.text
     box.text = new.insert(box.cursor_position, strs)
   end
-  
+
   command(
     :aa_charlie_11,
     name: 'AA_あしながウイーン',
@@ -234,4 +234,66 @@ EOM
     box.text = new.insert(box.cursor_position, strs)
   end
 
+  command(
+    :aa_charlie_12,
+    name: 'AA_お伺い',
+    condition: lambda{ |opt| true },
+    visible: true,
+    role: :postbox
+  ) do |opt|
+    strs = <<"EOM"
+.　　　　 ＿＿＿
+　　 _ ／´՞　 ՞｀ ＼
+　　/)) 　 し　　ヽ
+　 ｜∩ 　 ਊ 　　 |
+　 / ノ､ 　　　　 ノ￣)
+　/ /　　　　　　 /ﾌ_/
+　L＿／＼
+EOM
+    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    new = box.text
+    box.text = new.insert(box.cursor_position, strs)
+  end
+
+  command(
+    :aa_charlie_13,
+    name: 'AA_お伺い(眉なし)',
+    condition: lambda{ |opt| true },
+    visible: true,
+    role: :postbox
+  ) do |opt|
+    strs = <<"EOM"
+.　　　　 ＿＿＿
+　　 _ ／ 　　　＼
+　　/)) 　՞　　՞　ヽ
+　 ｜∩ 　 ਊ 　　 | ……
+　 / ノ､ 　　　　 ノ￣)
+　/ /　　　　　　 /ﾌ_/
+　L＿／＼
+EOM
+    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    new = box.text
+    box.text = new.insert(box.cursor_position, strs)
+  end
+
+  command(
+    :aa_charlie_14,
+    name: 'AA_お伺い(顔集中)',
+    condition: lambda{ |opt| true },
+    visible: true,
+    role: :postbox
+  ) do |opt|
+    strs = <<"EOM"
+.　　　　 ＿＿＿
+　　 _ ／ 　　　　＼
+　　/)) 　　　　　ヽ
+　 ｜∩ 　 ՞ਊ ՞　　 |
+　 / ノ､ 　　　　 ノ￣)
+　/ /　　　　　　 /ﾌ_/
+　L＿／＼
+EOM
+    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    new = box.text
+    box.text = new.insert(box.cursor_position, strs)
+  end
 end
