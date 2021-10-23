@@ -1,4 +1,4 @@
-##WHAT IS THIS
+## WHAT IS THIS
 
 アスキーアートを呼び出すだけのmikutterプラグインです。
 
@@ -14,17 +14,17 @@
    /　|　　　　　　　　　iヽ
 ```
 
-##HOW TO INSTALL
+## HOW TO INSTALL
 
 ```
 $ git clone https://github.com/Akkiesoft/mikutter_aa_charlie_uiiin ~/.mikutter/plugin/mikutter_aa_charlie_uiiin
 ```
 
-##HOW TO USE
+## HOW TO USE
 
-+ ショートカットキーを割り当てます
-+ 投稿ボックスにフォーカスした状態でショートカットキーを実行します
+* ショートカットキーを割り当てます
+* 投稿ボックスにフォーカスした状態でショートカットキーを実行します
 
-##NOTICE
+## NOTICE
 
-+ すぬーなんとかとは関係ありません。
+* すぬーなんとかとは関係ありません。
