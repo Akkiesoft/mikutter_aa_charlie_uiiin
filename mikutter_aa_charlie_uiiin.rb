@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 
 Plugin.create(:mikutter_aa_charlie_uiiin) do
+  def set_aa_to_postbox(opt, aa)
+    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    new = box.text
+    box.text = new.insert(box.cursor_position, aa)
+  end
+
   command(
     :aa_charlie_1,
     name: 'AA_チャーリーウイーン',
@@ -8,7 +14,7 @@ Plugin.create(:mikutter_aa_charlie_uiiin) do
     visible: true,
     role: :postbox
   ) do |opt|
-    strs =  <<"EOM"
+    strs = <<"EOM"
 .　　　　　,,　＿
 　　　／ 　　　 ｀ ､
 　　/　　(_ﾉL_）　 ヽ
@@ -19,9 +25,7 @@ Plugin.create(:mikutter_aa_charlie_uiiin) do
  ／　 　　　￣　　 ヽ
  /　|　　　　　　　　　iヽ
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -36,9 +40,7 @@ EOM
 　　 し
 　　 ਊ
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -56,9 +58,7 @@ EOM
 　　　￣／￣￣￣＼￣
 　　　｜　　　　　｜
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -78,9 +78,7 @@ The key's randomart image is:
 |　 　　　し　　  |
 |l　　　　ਊ　　　l|
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -102,9 +100,7 @@ EOM
 | ／　 　￣　　 ヽ|
 +−−−−−−−−-+
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -122,9 +118,7 @@ EOM
 (´　　 ,ヽ、　(⌒　　　　　ヽ、
 　｀ｰ-'´ ⌒'ー､,,,,,,,,..,,.-‘
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -141,9 +135,7 @@ EOM
 (´　　 ,ヽ、　(  し    ｀ .   .
 　｀ｰ-'´ ⌒'ー､,       . .     .ਊ
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -163,9 +155,7 @@ EOM
 　　||　　　//
 　　ｍ　　 ｍ
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -185,9 +175,7 @@ EOM
 　　　　　||　　　//
 　　　　　ｍ　　 ｍ
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -204,9 +192,7 @@ EOM
 （　　/　ਊ＼　｝
 　＼＿|＿＿_|_／
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -229,9 +215,7 @@ EOM
 👟　　／／
 　　👟
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -250,9 +234,7 @@ EOM
 　/ /　　　　　　 /ﾌ_/
 　L＿／＼
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -271,9 +253,7 @@ EOM
 　/ /　　　　　　 /ﾌ_/
 　L＿／＼
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 
   command(
@@ -292,8 +272,6 @@ EOM
 　/ /　　　　　　 /ﾌ_/
 　L＿／＼
 EOM
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
-    new = box.text
-    box.text = new.insert(box.cursor_position, strs)
+    set_aa_to_postbox(opt, strs)
   end
 end
