@@ -2,7 +2,7 @@
 
 Plugin.create(:mikutter_aa_charlie_uiiin) do
   def set_aa_to_postbox(opt, aa)
-    box = Plugin[:gtk].widgetof(opt.widget).widget_post.buffer
+    box = Plugin[:gtk3].widgetof(opt.widget).widget_post.buffer
     new = box.text
     box.text = new.insert(box.cursor_position, aa)
   end
