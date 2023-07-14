@@ -70,13 +70,17 @@ EOM
   ) do |opt|
     strs = <<"EOM"
 The key's randomart image is:
-+--[ RSA 2048]----+
++--[ED25519 256]--+
 |　　　 ,,　＿　　|
 |　／ 　　　 ｀ ､ |
 |/　　(_ﾉL_）　 ヽ|
 |/　　´՞　 ՞｀　 l|
 |　 　　　し　　  |
 |l　　　　ਊ　　　l|
+|>　､ _ 　　　　ィ|
+| ／　 　￣　　 ヽ|
+|　|　　　　　　i |
++----[SHA256]-----+
 EOM
     set_aa_to_postbox(opt, strs)
   end
